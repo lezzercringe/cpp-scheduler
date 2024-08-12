@@ -2,10 +2,10 @@
 
 This was originally a part of university labwork, but I've decided to publish it in case I apply to some internship.\
 It implements a simple synchronous scheduler, with a single thread, and a single graph of tasks.\
-Usecases & examples are available in the tests directory.\
+Usecases & examples are available in the tests directory.
 
 Probably I should put a single example here, so that it's easier to see how it works.\
-The main point is that tasks can be added in any order, and the scheduler will execute them in the way they depend on each other.\
+The main point is that tasks depending on each other can be added in any order, and the scheduler will execute them based on their dependencies.
 
 ```cpp
 int main () {
